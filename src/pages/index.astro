@@ -1,0 +1,74 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Head from '@/components/Head.astro';
+import { Picture,Image } from 'astro:assets';
+import blur from '/src/assets/img/bg.svg';
+import cover from '/src/assets/img/dev.jpg';
+import Button from '@/components/Button.astro';
+---
+<html lang='en'>
+	<Head title='OV - Web Dev and Design' />
+	<Layout>
+		<!-- HERO -->
+		<section
+			class='grid gap-x-10 gap-y-10 lg:gap-y-0 place-content-center content-center lg:grid-flow-col lg:auto-cols-max lg:mt-[10rem] 2xl:mt-[15rem] mb-[5rem] px-3 lg:px-0 h-full text-white'>
+			<Image
+			src={blur}
+			class='fixed blur-[100px] top-0 bottom-0 left-0 right-0 m-auto h-full w-full object-cover object-center z-[-1]'
+			alt='blur background'
+		/>
+
+			<div
+				class='blur-bg rounded-xl p-4 lg:p-10 mt-[8rem] xs:mt-[10rem] sm:mt-[12rem] md:mt-[10rem] lg:mt-0 w-full max-w-[600px]'>
+				<div>
+					<h1
+						class='text-7xl lg:text-9xl font-black bg-clip-text text-transparent bg-gradient-to-r from-primary-0 to-accent-0'>
+						Happy to see you here!
+					</h1>
+				</div>
+
+				<div class='text-xl font-light lg:max-w-6xl mt-5'>
+					<blockquote>
+						Here, you can learn about me, read my blog, and familiarize yourself
+						with my portfolio. Currently, I am studying JavaScript and the Astro
+						Framework, and I plan to study the React library. I am also
+						interested in Qwik and enjoy learning new things. Most importantly,
+						I am passionate about my work.
+					</blockquote>
+				</div>
+			</div>
+			<div>
+				<div
+					class='self-start blur-bg rounded-xl p-4 lg:p-10 w-full max-w-[400px]'>
+					<Picture
+						src={cover}
+						class='mx-auto object-cover rounded-xl'
+						alt='cover'
+						formats={['avif', 'webp']}
+					/>
+					<p class='text-xl font-light tracking-wide mt-5'>
+						You can find this site on GitHub, I'm developing it for my
+						portfolio, as well as for blogging.
+					</p>
+					<div class='mt-5'>
+						<Button
+							text='Check out'
+							link='https://github.com/vratskyi/vratskyi.github.io'
+						/>
+					</div>
+				</div>
+				<div
+					class='mt-5 flex justify-between items-center self-start blur-bg rounded-xl p-4 lg:p-10 w-full max-w-[400px]'>
+					<h3
+						class='text-2xl font-light text-white'>
+						Some good staff:
+					</h3><Button
+						text='Read blog'
+						link='/blog'
+						target='_self'
+					/>
+				</div>
+			</div>
+		</section>
+	</Layout>
+</html>
