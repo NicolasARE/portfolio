@@ -3,8 +3,8 @@ import Layout from '@/layouts/Layout.astro';
 import Head from '@/components/Head.astro';
 import Title from '@/components/Title.astro';
 import { Image } from 'astro:assets';
-import water from '/src/assets/img/water-website.png';
-import byshikat from '/src/assets/img/online-store-byshikat.png';
+import daichi from '/src/assets/img/daichi.png';
+import mmi from '/src/assets/img/mmi-dw.png';
 import lmd from '/src/assets/img/online-store-lmd.png';
 import blur from '/src/assets/img/bg.svg';
 import PortfolioCard from '@/components/PortfolioCard.astro';
@@ -29,37 +29,35 @@ let title = Astro.props;
 		<div class='grid grid-rows-auto content-center gap-5 pb-10 mt-[11.1111%]'>
 
 			<PortfolioCard
-				img={water}
+				img={daichi}
 				alt={title}
-				site="https://h2ovoda.com.ua/"
-				title='Water delivery website'
+				site="https://exemple.showmyteam.fr/"
+				title='Maquette de site pour team esport'
 				badgeProps={[
 					{ text: "JavaScript" },
 					{ text: "HTML/CSS" }
 			]}
+				
 				badgeLinkProps={[ 
 					{text: "Astro", alt: "Astro logo", href: "https://astro.build/"},
 					{text: "TailwindCSS", alt: "TailwindCSS logo", href: "https://tailwindcss.com/"}
+					
 
 			 ]}
 				description={`
-				The website I developed offers water delivery in Belogorodka and
-				surrounding areas. It has an attractive design, intuitive layout
-				and integration with analytical tools to attract more customers.
-				Visitors can easily leave a request for water delivery through the
-				order form and get access to bottled drinking water.
+				Le site développé représente une maquette de site pour une team esport, 
+				dans ce site on peut voir les membres de la team, les jeux sur lesquels ils jouent, 
+				les réseaux sociaux de la team, et une boutique afin d'acheter des produits.
 				`}
 			>
 	</PortfolioCard>
 
 		<PortfolioCard
-		img={byshikat}
+		img={mmi}
 		alt={title}
-		site="https://byshikat.com/"
-		title='Byshikat online shoes store'
+		site="https://communaute-mmi.fr/"
+		title='Communauté MMI site web'
 		badgeProps={[
-			{ text: "PHP" },
-			{ text: "ACF" },
 			{ text: "JavaScript" },
 			{ text: "HTML/CSS" }
 		]}
@@ -67,11 +65,8 @@ let title = Astro.props;
 				{text: "WordPress", alt: "WordPress logo", href: "https://wordpress.com/"},
 		]}
 			description={`
-			Analyzed the target audience, I realized that it is necessary to
-			make something similar to the model of behavior in Instagram, as
-			well as similar at least remotely similar design, thanks to a set
-			of solutions sales from their instagram store went to online store
-			and increased by 1000%
+			Le site de la communauté MMI est basé sur WordPress CMS, avec mon groupe nous avons ajouté des plugins pour améliorer l'expérience utilisateur,
+			et nous avons également ajouté des fonctionnalités pour les étudiants et les professeurs. 
 			`}
 		>
 		</PortfolioCard>

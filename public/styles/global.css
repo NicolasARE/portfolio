@@ -186,13 +186,7 @@ legend {
   padding: 0
 }
 
-menu,
-ol,
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0
-}
+
 
 dialog {
   padding: 0
@@ -1141,7 +1135,6 @@ h4,
 h5,
 h6,
 li {
-  display: inline-block;
   font-family: Kanit, sans-serif !important
 }
 
@@ -1159,6 +1152,9 @@ h2 {
 body {
   font-family: Montserrat, sans-serif !important
 }
+/* body {
+  background: linear-gradient(to bottom, #000000, #333333, #666666);
+} */
 
 ::-webkit-scrollbar {
   height: 3px;
@@ -1486,6 +1482,14 @@ blockquote {
     font-size: 1.125rem;
     line-height: 1.75rem
   }
+
+  .skills-list {
+    list-style: initial;
+    /* Rétablit les styles de liste par défaut */
+    margin-left: 1.5em;
+    /* Ajuste la marge à gauche pour les puces */
+  }
+
 }
 
 @media (min-width:1280px) {
