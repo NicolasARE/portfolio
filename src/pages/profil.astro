@@ -5,7 +5,7 @@ import Title from '@/components/Title.astro';
 import { Image, Picture } from 'astro:assets';
 import me from '/src/assets/img/nicolas-arena.jpg';
 import github from '/src/assets/img/github.svg';
-import blur from '/src/assets/img/bg.svg';
+import background from '/src/assets/img/background.svg';
 ---
 
 <Head title="Profil" />
@@ -16,7 +16,7 @@ import blur from '/src/assets/img/bg.svg';
   <!-- Profil -->
   <section class="grid content-start px-3 lg:px-0 mb-[5rem] text-white">
     <Image
-      src={blur}
+      src={background}
       class="fixed blur-[100px] top-0 bottom-0 left-0 right-0 m-auto h-full w-full object-cover object-center z-[-1]"
       alt="blur background"
     />
@@ -171,6 +171,7 @@ import blur from '/src/assets/img/bg.svg';
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
+        <li>TypeScript</li>
         <!-- Ajoutez autant de compétences front-end que nécessaire -->
       </ul>
     </div>
@@ -179,9 +180,9 @@ import blur from '/src/assets/img/bg.svg';
     <div>
       <h3 class="text-4xl font-bold mb-3">Back-end</h3>
       <ul class="skills-list text-lg">
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>MongoDB</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>C#</li>
         <!-- Ajoutez autant de compétences back-end que nécessaire -->
       </ul>
     </div>

@@ -9,10 +9,10 @@ module.exports = {
 		  },
 		extend: {
 			colors: {
-				background: ['#4444'],
-				primary: ['#F1362A'],
-				secondary: ['#18181B'],
-				accent: ['#AC1694'],
+				 background: ['#4444'],
+				 primary: ['#14c3da'],
+				 secondary: ['#18181B'],
+				 accent: ['#AC1694'],
 			},
 			fontFamily: {
 				sans: [("Kanit", "sans-serif"), ("Montserrat", "sans-serif")],

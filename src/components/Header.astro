@@ -2,6 +2,7 @@
 import { Image, Picture } from 'astro:assets';
 import logo from '/src/assets/img/logo.svg';
 import blur from '/src/assets/img/bg.svg';
+import background from '/src/assets/img/background.svg';
 ---
 
 <!-- HEADER -->
@@ -10,13 +11,17 @@ import blur from '/src/assets/img/bg.svg';
   transition:name="nav"
   class="container fixed top-1 md:left-5 md:right-5 xl:max-w-7xl mx-auto font-sans bg-background-0/10 backdrop-blur-3xl rounded-xl p-5 flex justify-between items-center z-50"
 >
-  <div class="w-20 z-50">
-    <a
-      href="/"
-      class="text-4xl lg:text-6xl font-black bg-clip-text text-transparent bg-gradient-to-r from-primary-0 to-accent-0"
-    >
-      Accueil
-    </a>
+<div class="w-20 z-50">
+  <a
+    href="/"
+    class="text-4xl lg:text-6xl font-black bg-clip-text bg-primary-0 text-transparent"
+  >
+    Accueil
+  </a>
+</div>
+
+
+  
   </div>
 
   <button
@@ -37,7 +42,7 @@ import blur from '/src/assets/img/bg.svg';
         class="menu bg-[#040404]/[98%] hidden overflow-y-auto animation z-40 fixed left-0 right-0 top-20 h-full w-full min-h-screen lg:min-h-[700px] max-w-[1120px] mx-auto rounded-xl"
       >
         <Picture
-          src={blur}
+          src={background}
           class="absolute blur-[100px] top-0 bottom-0 left-0 right-0 m-auto h-full w-full object-cover object-center z-[-1]"
           alt="blur background"
           formats={['avif', 'webp']}
@@ -48,9 +53,9 @@ import blur from '/src/assets/img/bg.svg';
           <li>
             <a href="/" class="hover-link active"> Home</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="/blog" class="hover-link">Blog</a>
-          </li>
+          </li> -->
           <li>
             <a href="/profil" class="hover-link">Profil</a>
           </li>

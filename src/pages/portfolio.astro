@@ -6,7 +6,7 @@ import { Image } from 'astro:assets';
 import daichi from '/src/assets/img/daichi.png';
 import mmi from '/src/assets/img/mmi-dw.png';
 import lmd from '/src/assets/img/online-store-lmd.png';
-import blur from '/src/assets/img/bg.svg';
+import background from '/src/assets/img/background.svg';
 import PortfolioCard from '@/components/PortfolioCard.astro';
 
 let title = Astro.props;
@@ -22,7 +22,7 @@ let title = Astro.props;
 	<!-- ABOUT ME -->
 	<section class='grid px-3 lg:px-0 content-start text-white'>
 		<Image
-		src={blur}
+		src={background}
 		class='fixed blur-[100px] top-0 bottom-0 left-0 right-0 m-auto h-full w-full object-cover object-center z-[-1]'
 		alt='blur background'
 	/>
@@ -39,8 +39,7 @@ let title = Astro.props;
 			]}
 				
 				badgeLinkProps={[ 
-					{text: "Astro", alt: "Astro logo", href: "https://astro.build/"},
-					{text: "TailwindCSS", alt: "TailwindCSS logo", href: "https://tailwindcss.com/"}
+					{text: "Bootstrap", alt: "Bootstrap logo", href: "https://getbootstrap.com/"}
 					
 
 			 ]}
