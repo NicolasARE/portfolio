@@ -5,7 +5,8 @@ import Title from '@/components/Title.astro';
 import { Image } from 'astro:assets';
 import daichi from '/src/assets/img/daichi.png';
 import mmi from '/src/assets/img/mmi-dw.png';
-import lmd from '/src/assets/img/online-store-lmd.png';
+import laravel from '/src/assets/img/laravel.png';
+import manga from '/src/assets/img/manga.png';
 import background from '/src/assets/img/background.svg';
 import PortfolioCard from '@/components/PortfolioCard.astro';
 
@@ -71,29 +72,44 @@ let title = Astro.props;
 		</PortfolioCard>
 
 		<PortfolioCard
-		img={lmd}
+		img={laravel}
 		alt={title}
-		site="https://lmd.lviv.ua/"
-		title='Paper gift bags service'
+		site="https://back5.arena.etu.mmi-unistra.fr/gestscol/public/student"
+		title='Gestscol - Projet Scolaire'
 		badgeProps={[
-			{ text: "PHP" },
-			{ text: "ACF" },
-			{ text: "JavaScript" },
 			{ text: "HTML/CSS" }
 		]}
 			badgeLinkProps={[ 
-				{text: "WordPress", alt: "WordPress logo", href: "https://wordpress.com/"},
+				{text: "Laravel", alt: "Laravel logo", href: "https://laravel.com/"},
+				{text: "PHP", alt: "PHP logo", href: "https://www.php.net/"},
 		]}
 			description={`
-			This online store is based on WordPress CMS and WooCommerce, I
-			redesigned the old site to a modern design and optimized the
-			loading time, thanks to a comprehensive approach, the number of
-			visitors and sales increased. Now the site is at the top of google
-			in Ukraine.
+			Gestscol est un projet scolaire, c'est un site web qui permet de gérer les étudiants, les cours, les groupes, 
+			les promotions et les emplois du temps. Grâce à ce projet, j'ai pu apprendre à utiliser le framework Laravel,
+			et j'ai pu aussi apprendre à utiliser filament pour les filtres. 
 			`}
 		>
 		</PortfolioCard>
 
+		<PortfolioCard
+		img={manga}
+		alt={title}
+		site="https://manga.arena.etu.mmi-unistra.fr/"
+		title='Manga Collection - Projet Scolaire'
+		badgeProps={[
+			{ text: "HTML/CSS" }
+		]}
+			badgeLinkProps={[ 
+				{text: "PHP", alt: "PHP logo", href: "https://www.php.net/"},
+		]}
+			description={`
+			Manga Collection est un projet scolaire, c'est un site web qui permet de gérer une collection de mangas,
+			les utilisateurs peuvent ajouter des mangas, les modifier, les supprimer, et les consulter. Il y a également un système de connexion et d'inscription 
+			pour que les utilisateurs puissent ajouter des manga dans leur panier.
+
+			`}
+		>
+		</PortfolioCard>
 		</div>
 	</section>
 </Layout>

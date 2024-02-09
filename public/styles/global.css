@@ -1118,9 +1118,11 @@ video {
 }
 
 :root {
-  --primary: #14c3da;
+  --primary: #1432da;
   --secondary: #18181B;
   --accent: #ac1694;
+  /* ac1694 */
+  /* 14c3da */
   --background: #040404
 }
 
@@ -1152,9 +1154,6 @@ h2 {
 body {
   font-family: Montserrat, sans-serif !important
 }
-/* body {
-  background: linear-gradient(to bottom, #000000, #333333, #666666);
-} */
 
 ::-webkit-scrollbar {
   height: 3px;
@@ -1176,12 +1175,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #14c3da
+  background: #ac1694
 }
 
 blockquote {
   --tw-border-opacity: 1;
-  border-color: rgb(20 195 218/var(--tw-border-opacity));
+  border-color: rgb(172 22 148/var(--tw-border-opacity));
   border-left-width: 2px;
   display: inline-block;
   font-size: 1.25rem;
