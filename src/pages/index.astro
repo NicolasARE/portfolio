@@ -3,7 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 import Head from '@/components/Head.astro';
 import { Picture, Image } from 'astro:assets';
 import blur from '/src/assets/img/background.svg';
-import cover from '/src/assets/img/dev.jpg';
+import code from '/src/assets/img/code.jpg';
 import Button from '@/components/Button.astro';
 ---
 
@@ -46,7 +46,7 @@ import Button from '@/components/Button.astro';
           class="self-start blur-bg rounded-xl p-4 lg:p-10 w-full max-w-[400px]"
         >
           <Picture
-            src={cover}
+            src={code}
             class="mx-auto object-cover rounded-xl"
             alt="cover"
             formats={['avif', 'webp']}
