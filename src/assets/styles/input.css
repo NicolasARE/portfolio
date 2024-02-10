@@ -5,7 +5,7 @@
 
 /** Основные цвета */
 :root {
-	--primary: #f1362a;
+	--primary: #1432da;
 	--secondary: #2f2929;
 	--accent: #ac1694;
 	--background: #040404;
@@ -51,7 +51,7 @@ body{
   	background: rgb(47, 41, 41);
   }
 ::-webkit-scrollbar-thumb:active{
-  	background: rgb(240, 54, 44);
+  	background: rgb(172, 22, 148);
   }
 /* -------------- */
 
