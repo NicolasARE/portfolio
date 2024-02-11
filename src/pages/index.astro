@@ -8,7 +8,8 @@ import Button from '@/components/Button.astro';
 ---
 
 <html lang="fr">
-  <Head title="nicolas-arena.fr" />
+  <Head title="Portfolio de Nicolas Arena: Développeur Web et Java - nicolas-arena.fr" rel="shortcut icon" href="/icon.svg" type="image/x-icon" />
+  <meta name="description" content="Découvrez le portfolio de Nicolas Arena, développeur web passionné par Java et Angular. Explorez ses compétences et projets.">
   <Layout>
     <!-- HERO -->
     <section
@@ -69,5 +70,17 @@ import Button from '@/components/Button.astro';
         </div>
       </div>
     </section>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nicolas Arena",
+        "url": "https://nicolas-arena.fr",
+        "sameAs": [
+          "https://www.linkedin.com/in/nicolasarena/",
+          "https://github.com/nicolas-arena"
+        ]
+      }
+    </script>
   </Layout>
 </html>
