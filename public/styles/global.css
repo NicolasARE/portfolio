@@ -1254,12 +1254,12 @@ blockquote {
 
 .hover\:border-primary-0:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(241 54 42/var(--tw-border-opacity))
+  border-color: rgb(20 50 218/var(--tw-border-opacity))
 }
 
 .hover\:bg-primary-0:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(241 54 42/var(--tw-bg-opacity))
+  background-color: rgb(20 50 218/var(--tw-bg-opacity))
 }
 
 .hover\:bg-zinc-500\/20:hover {
