@@ -848,7 +848,7 @@ video {
 }
 
 .from-primary-0 {
-  --tw-gradient-from: #14c3da var(--tw-gradient-from-position);
+  --tw-gradient-from: #1432da var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(12, 20, 76, 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
