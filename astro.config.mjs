@@ -6,7 +6,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), mdx()],
-  site: 'https://www.nicolas-arena.dev',
+  site: 'https://www.nicolas-arena.fr',
   prefetch: {
     prefetchAll: true,
     defaultStrategy: 'viewport'
